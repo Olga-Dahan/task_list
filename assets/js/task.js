@@ -1,4 +1,5 @@
 var taskList = [];  
+// loadData();
 
 
 function loadTask() {
@@ -16,6 +17,7 @@ function loadTask() {
     taskList.push(data);
 
     createTable();
+    // saveData();
     
     document.getElementById("taskForm").reset();
 
@@ -51,3 +53,11 @@ function removeLast() {
     createTable();
 }
 
+// function loadData() {
+//     taskList = JSON.parse(localStorage.getItem("tasks"));
+//     createTable();
+// }
+
+// function saveData() {
+//     localStorage.setItem("tasks", JSON.stringify(taskList));
+// }
