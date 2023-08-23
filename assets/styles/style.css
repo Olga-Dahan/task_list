@@ -1,0 +1,44 @@
+* {
+    text-align: center;
+  }
+
+  .myForm {
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px black;
+    width: 20%;
+    margin: auto;
+    padding: 20px;
+  }
+
+  input, textarea {
+    margin-bottom: 20px;
+  }
+
+  #taskList {
+    border-collapse: collapse;
+    width:50%;
+    margin: auto;
+  }
+
+  #taskList td, #taskList th{
+        border: 1px solid #ddd;
+        padding: 8px;
+  }
+
+  #taskList tr:nth-child(even){
+    background-color: #f2f2f2;
+  }
+
+  #taskList tr:hover{
+   background-color: #ddd; 
+  }
+
+  #taskList th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #1e6c6e;
+    color: white;
+  }
+  

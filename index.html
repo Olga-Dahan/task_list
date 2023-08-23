@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script defer src="assets/js/task.js"></script>
+  <link rel="stylesheet" href="assets/styles/style.css" />
+</head>
+
+<body>
+  <h1>Task List</h1>
+  <hr />
+  <div class="myForm">
+    <form id="taskForm">
+        <label for="the-task">Please enter your task:</label>
+        <br>
+        <textarea rows="2"  id="the-task" name="task"></textarea>
+        <br>
+        <label for="if-Done">Is the task done?</label>
+        <br>
+        <input type="text" name="ifDone" id="if-Done">
+        <br>
+        <label for="the-date">Please enter a task deadline:</label>
+        <br>
+        <input type="date" name="date" id="the-date" >
+        <br>
+        <input type="button" value="load task" onclick="loadTask()" >
+    </form>
+  </div>
+
+  <br />
+  
+  <input type="button" value="clear table" onclick="clearTable()" >
+  <input type="button" value="remove last" onclick="removeLast()" >
+
+  <table id="taskList">
+    <tr>
+      <th>task deadline</th>
+      <th>completed</th>
+      <th>task</th>
+    </tr>
+
+    <tbody id="data"></tbody>
+  </table>
+
+</body>
+
+</html>
